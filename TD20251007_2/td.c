@@ -24,5 +24,6 @@ int main(int argc, const char *argv[])
 	printf("y= %.4f\n", y);
 
 	// char a = 0;
+	
 	// scanf("%ld", a); //pas content, ce n'est pas supposé marcher (3 octets en mémoire écrasés en mémoire)
 }
