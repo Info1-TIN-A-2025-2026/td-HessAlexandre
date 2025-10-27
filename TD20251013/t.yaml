@@ -1,0 +1,25 @@
+tests :
+  - name: Valeures imposées
+    stdin: "245.27 240 336" 
+    stdout:
+      - contains: "29.71"
+  - name: Valeures correctes
+    stdin: "100 100 365"
+    stdout:
+      - contains : "11.58"
+  - name: Prix négatif
+    stdin: "-100 100 360"
+    stdout:
+      - contains: "Valeur impossible ! (S0 Négative/Nul)"
+  - name: Strike négatif
+    stdin: "100 -100 360"
+    stdout:
+      - contains : "Valeur impossible ! (K négatif/nul)"
+  - name: Temps négatif
+    stdin: "100 100 -12"
+    stdout:
+      - contains: Valeur impossible (T Négatif/nul)
+  - name: Temps Nul
+    stdin: "100 100 0"
+    stdout:
+      - contains: Valeur impossible (T Négatif/nul)
