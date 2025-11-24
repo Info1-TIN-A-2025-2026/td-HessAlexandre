@@ -23,3 +23,4 @@ double delta(double a, double b, double c)
 	r = b * b - 4. * a * c;
 	return r;
 }
+//
